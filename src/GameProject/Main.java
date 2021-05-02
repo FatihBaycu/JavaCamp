@@ -51,7 +51,6 @@ public class Main {
         orderManager.SellWithCampaignDiscount(game,gamer,campaign);
         orderManager.SellWithCampaignDiscount(game,gamer,campaign);
         orderManager.SellWithCampaignDiscount(game,gamer,campaign);
-        orderManager.SellWithCampaignDiscount(game,gamer,campaign);
 
     }
 }
