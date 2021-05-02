@@ -1,11 +1,11 @@
-package kodlama.io;
+package KodlamaIo;
 
-import kodlama.io.Entities.Course;
-import kodlama.io.Entities.Instructor;
-import kodlama.io.Entities.Student;
-import kodlama.io.Manangment.CourseManager;
-import kodlama.io.Manangment.InstructorManager;
-import kodlama.io.Manangment.StudentManager;
+import KodlamaIo.Entities.Course;
+import KodlamaIo.Entities.Instructor;
+import KodlamaIo.Entities.Student;
+import KodlamaIo.Manangment.CourseManager;
+import KodlamaIo.Manangment.InstructorManager;
+import KodlamaIo.Manangment.StudentManager;
 
 public class Main {
     public static void main(String[] args) {

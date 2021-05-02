@@ -1,10 +1,7 @@
-package kodlama.io.Manangment;
+package KodlamaIo.Manangment;
 
-import kodlama.io.Entities.Course;
-import kodlama.io.Entities.Instructor;
-
-import javax.swing.text.html.parser.Entity;
-import java.util.List;
+import KodlamaIo.Entities.Course;
+import KodlamaIo.Entities.Instructor;
 
 public class InstructorManager {
     public void Add(Instructor instructor){System.out.println("Instructor Added.");}

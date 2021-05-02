@@ -1,8 +1,7 @@
-package kodlama.io.Manangment;
+package KodlamaIo.Manangment;
 
-import kodlama.io.Entities.Course;
-import kodlama.io.Entities.Instructor;
-import kodlama.io.Entities.Student;
+import KodlamaIo.Entities.Course;
+import KodlamaIo.Entities.Student;
 
 public class StudentManager {
     public void add(Student student) {

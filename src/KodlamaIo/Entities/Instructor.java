@@ -1,4 +1,4 @@
-package kodlama.io.Entities;
+package KodlamaIo.Entities;
 
 public class Instructor extends User {
 

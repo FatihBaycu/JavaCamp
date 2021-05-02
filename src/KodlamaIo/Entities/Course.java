@@ -1,6 +1,4 @@
-package kodlama.io.Entities;
-
-import java.util.List;
+package KodlamaIo.Entities;
 
 public class Course {
     int courseId;

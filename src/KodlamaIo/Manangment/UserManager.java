@@ -1,6 +1,6 @@
-package kodlama.io.Manangment;
+package KodlamaIo.Manangment;
 
-import kodlama.io.Entities.User;
+import KodlamaIo.Entities.User;
 
 public class UserManager {
     void add(User user){System.out.println("User Added.");}

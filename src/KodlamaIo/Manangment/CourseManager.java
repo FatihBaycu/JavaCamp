@@ -1,5 +1,5 @@
-package kodlama.io.Manangment;
-import kodlama.io.Entities.Course;
+package KodlamaIo.Manangment;
+import KodlamaIo.Entities.Course;
 
 public class CourseManager {
     public void Add(Course course){System.out.println("Course Added.");}
