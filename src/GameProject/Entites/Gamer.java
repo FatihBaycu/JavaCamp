@@ -1,7 +1,5 @@
 package GameProject.Entites;
 
-import java.util.Date;
-
 public class Gamer extends User{
     private int id;
     private String firstName;
@@ -9,14 +7,24 @@ public class Gamer extends User{
     private int birthYear;
     private String nationalIdentity;
     private double balance;
+    private String password;
 
-    public Gamer(int id, String firstName, String lastName, int birthYear, String nationalIdentity, double balance) {
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Gamer(int id, String firstName, String lastName, int birthYear, String nationalIdentity, double balance, String password) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthYear = birthYear;
         this.nationalIdentity = nationalIdentity;
         this.balance = balance;
+        this.password = password;
     }
     public Gamer(){}
 
