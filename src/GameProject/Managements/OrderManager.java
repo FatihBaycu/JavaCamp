@@ -11,6 +11,7 @@ public class OrderManager implements OrderService {
         if (gamer.getBalance()<game.getPrice()){
             System.out.println("** insufficient balance **\n Game Price:"+game.getPrice()+"\n You'r Balance is "+gamer.getBalance());
         }
+
         else
         { gamer.setBalance(gamer.getBalance()-game.getPrice());
             System.out.println("Dear Gamer "+gamer.getFirstName()+"\n You'r Balance is "+gamer.getBalance()+" now.");

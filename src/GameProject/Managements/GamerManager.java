@@ -10,6 +10,7 @@ public class GamerManager implements GamerService {
     @Override
     public void Update(Gamer gamer) { checkValidate(gamer,"Updated");}
 
+
     @Override
     public void Delete(Gamer gamer) { System.out.println("Gamer Deleted");}
 
