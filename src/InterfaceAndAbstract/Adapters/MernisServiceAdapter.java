@@ -12,8 +12,6 @@ public class MernisServiceAdapter implements CustomerCheckService {
 //                customer.getLastName().toUpperCase(),customer.getDateOfBirth().getYear());
 
 
-        //MERNİS SİSTEMİNİN ÇALIŞMASI İÇİN "MAVEN" YAPIDA BİR PROJE OLMASI GEREKİYOR ANCAK ÖYLE WEB SERVİCE KULLANABİLİRİZ.
-        //BU PROJE STANDART CONSOLE APP JAVA OLDUĞU İÇİN BURADA ÇALIŞMADI FAKAT KODLAR BİREBİR AYNI....
 
 
         return true;

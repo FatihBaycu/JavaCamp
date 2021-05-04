@@ -10,7 +10,7 @@ public class CustomerCheckManager implements CustomerCheckService {
     @Override
     public boolean ChcekIfRealPerson(Customer customer) {
 
-        if(customer.getLastName()!="Baycu"){
+        if(customer.getLastName()=="Baycu"){
             return  true;
         }
         else return false;
