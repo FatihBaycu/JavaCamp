@@ -1,6 +1,7 @@
 package InterfaceAndAbstract;
 
 import InterfaceAndAbstract.Abstract.BaseCustomerManager;
+import InterfaceAndAbstract.Adapters.MernisServiceAdapter;
 import InterfaceAndAbstract.Concrete.CustomerCheckManager;
 import InterfaceAndAbstract.Concrete.NeroCustomerManager;
 import InterfaceAndAbstract.Concrete.StarbucksCustomerManager;
@@ -13,8 +14,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-       BaseCustomerManager baseCustomerManager=new StarbucksCustomerManager(new CustomerCheckManager());
-        baseCustomerManager.Add(new Customer(1,"Fatih","Baycu", new Date( 2012,12,12),"12345689"));
+       BaseCustomerManager baseCustomerManager=new StarbucksCustomerManager(new MernisServiceAdapter());
+
+       baseCustomerManager.Add(new Customer(1,"fatih","baycu", new Date( 2021,01,01),"12345678910"));
 
     }
 }
