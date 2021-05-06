@@ -7,28 +7,33 @@ import ECommerce.Core.Entities.Concretes.User;
 import ECommerce.Core.Extensions.Abstracts.Regex;
 import ECommerce.Core.Extensions.Concretes.EmailRegex;
 
+import java.util.Random;
+
 public class UserManager implements UserService {
 
     private UserDao userDao;
+    double confirmationCode;
 
     public UserManager(UserDao userDao) {
         this.userDao = userDao;
-
     }
 
     @Override
     public void login(User user) {
-
-
-
-
+        if (user.getFirstName()!=null && user.getPassword()!=null && checkUser(user)){
+            System.out.println("Giriş yapıldı.");
+        }else {
+            System.out.println("Parola veya email hatalı.");
+        }
     }
 
+    boolean confirmate=false;
     @Override
     public void register(User user) {
         if (checkUser(user)){
-            userDao.login(user);
-
+             sendEmailConfirmation(user);
+            if (confirmate==true)
+                userDao.login(user);
         }
 
     }
@@ -36,8 +41,9 @@ public class UserManager implements UserService {
     @Override
     public void add(User user) {
         if (checkUser(user)){
-            userDao.add(user);
-
+            sendEmailConfirmation(user);
+            if (confirmate==true)
+                userDao.login(user);
         }
 
     }
@@ -60,8 +66,6 @@ public class UserManager implements UserService {
 
     boolean checkUser(User user){
 
-
-
         Regex regex=new EmailRegex();
 
         if (regex.emailControl(user.getEmail()) && user.getPassword().length()>6 && user.getFirstName().length()>2 && user.getLastName().length()>2){
@@ -71,4 +75,27 @@ public class UserManager implements UserService {
             return false;
         }
     }
+
+
+    void sendEmailConfirmation(User user){
+        System.out.println("\nemail adresinize doğrulama kodu gönderildi.");
+        confirmate=false;
+        Random random=new Random();
+        confirmationCode =random.nextInt(99999999);
+        confirmateEmail();
+    }
+
+    void confirmateEmail(){
+    confirmate=true;
+
+        System.out.println("doğrulama kodunu giriniz:\n");
+        if (confirmationCode==confirmationCode){
+            System.out.println(confirmationCode+"\nemail adresiniz doğrulandı.\n");
+        }
+        else{
+            System.out.println("Email doğrulanmadı.");
+        }
+    }
+
+
 }

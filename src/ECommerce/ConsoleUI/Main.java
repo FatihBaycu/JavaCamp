@@ -18,12 +18,12 @@ public class Main {
         User user=new User();
 
         user.setUserId(1);
-        user.setEmail("fatih.baycu@gmail.com");
-        user.setFirstName("aaa");
-        user.setLastName("aaa");
-        user.setPassword("1234567");
-
+        user.setEmail("fatih@baycu.com");
+        user.setFirstName("Fatih");
+        user.setLastName("Baycu");
+        user.setPassword("12398746");
         userService.register(user);
+        userService.login(user);
 
         }
 
