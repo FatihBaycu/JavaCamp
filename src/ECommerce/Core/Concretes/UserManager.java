@@ -60,7 +60,7 @@ public class UserManager implements UserService {
 
     boolean checkUser(User user){
 
-        userDao.getAll(user.get)
+
 
         Regex regex=new EmailRegex();
 
