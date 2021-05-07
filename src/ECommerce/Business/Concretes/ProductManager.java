@@ -1,7 +1,6 @@
 package ECommerce.Business.Concretes;
 
 import ECommerce.Business.Abstracts.ProductService;
-import ECommerce.Core.Extensions.Abstracts.Regex;
 import ECommerce.DataAccess.Abstracts.ProductDao;
 import ECommerce.Entities.Concretes.Product;
 
